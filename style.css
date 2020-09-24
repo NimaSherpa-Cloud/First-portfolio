@@ -21,33 +21,34 @@ header h1{
 	padding: 15px;
 }
 
-header div{
+.nav{
 	position: relative;
 	width: 100%;
 	background-color: #26282d;
+	display: flex;
+	justify-content: flex-end;
 }
 
-header div  a{
+header .nav  a{
 	text-decoration: none;
 	color: white;
 	text-align: left;
 }
-header div ul li{
-	float: right;
+header .nav ul li{
 	width: 120px;
 	height: 30px;
 	list-style: none;
 	display: inline-block;
 	padding: 10px;
 }
-header div ul li:hover{
+header .nav ul li:hover{
 	background-color: #1e2025;
 }
-header div ul li ul li{
+header .nav ul li ul li{
 	display: none;
 	list-style: none;
 }
-header div ul li:hover ul li{
+header .nav ul li:hover ul li{
 	display: block;
 }
 
@@ -91,11 +92,12 @@ body{
 	line-height: 1.8;
 }
 #gallary{
-	display: flex;
+	display: inline-flex;
 	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 #gallary img{
-	width: 32%;
+	width: 30%;
 	height: 32%;
 	padding: 8px;
 	border-radius: 5%;
@@ -112,8 +114,8 @@ body{
 	opacity: 0.5;
 }
 .quote .insideQuote{
-	position: absolute;
-	top: 330%;
+	position: relative;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: white;
